@@ -1,8 +1,6 @@
-let marks=[85,97,44,37,76,60];
-let h=0;
-for(let i of marks){
-    h=h+i;
+let price = [100,200,300,400,500];
+for(let i=0; i<price.length; i++){
+    let offer = price[i]/10;
+    price[i] = price[i] - offer;
+    console.log(price[i]);
 }
-console.log(h);
-let avg=h/marks.length;
-    console.log(avg);
