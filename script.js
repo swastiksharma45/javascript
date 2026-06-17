@@ -1,4 +1,8 @@
-let arr=[1,2,3,4,5,6,7];
-for(let i of arr){
-    console.log(i);
+let marks=[85,97,44,37,76,60];
+let h=0;
+for(let i of marks){
+    h=h+i;
 }
+console.log(h);
+let avg=h/marks.length;
+    console.log(avg);
