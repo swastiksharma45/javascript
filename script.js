@@ -1,4 +1,4 @@
 let foodItems=["poatato","tomato","paneer","cabage"];
 console.log(foodItems);
-foodItems.push("chips","onion","carrot");
+foodItems.pop();
 console.log(foodItems);
