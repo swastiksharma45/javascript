@@ -1,3 +1,5 @@
-let foodItems=["poatato","tomato","paneer","cabage"];
-console.log(foodItems);
-console.log(foodItems.toString());
+function myFunction(){
+    console.log("Hello");
+    console.log("hi");
+}
+myFunction();
