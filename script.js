@@ -1,5 +1,7 @@
-function myFunction(){
-    console.log("Hello");
-    console.log("hi");
+function sum(x,y){
+    s=x+y;
+   return s;    
 }
-myFunction();
+let val=sum(7,6);
+
+console.log(val) 
