@@ -1,7 +1,6 @@
-function sum(x,y){
-    s=x+y;
-   return s;    
+function dsum(x,y){
+    return x+y;
 }
-let val=sum(7,6);
-
-console.log(val) 
+const arrowsum = (a,b)=>{
+    console.log(a+b);
+};
