@@ -1,3 +1,3 @@
-const arrowdiv = (a,b)=>{
-    console.log(a/b);
+const arrowmod = (a,b)=>{
+    console.log(a%b);
 };
