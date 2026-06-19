@@ -1,3 +1,3 @@
-const arrowmul = (a,b)=>{
-    console.log(a*b);
+const arrowsub = (a,b)=>{
+    console.log(a-b);
 };
