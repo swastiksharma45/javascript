@@ -1,3 +1,3 @@
-const arrowsub = (a,b)=>{
-    console.log(a-b);
+const arrowdiv = (a,b)=>{
+    console.log(a/b);
 };
