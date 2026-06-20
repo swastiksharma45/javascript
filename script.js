@@ -1,4 +1,4 @@
-function myVowels(str){
+const myVowels=(str)=>{
     let count=0;
     for(const char of str)
     {
