@@ -3,15 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <script src="script.js"></script>
+    <title>AI Front Page</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: rgba(255, 255, 255, 0.08);
+            --text: #e6edf3;
+            --accent: #6d94ff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, rgba(109, 148, 255, 0.25), transparent 35%),
+                        linear-gradient(180deg, #0d1117 0%, #080b10 100%);
+            color: var(--text);
+            font-family: Inter, system-ui, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .container {
+            width: 100%;
+            max-width: 960px;
+            padding: 32px;
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
+            backdrop-filter: blur(18px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+        .hero {
+            display: grid;
+            gap: 28px;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: rgba(109, 148, 255, 0.12);
+            color: #bdd3ff;
+            font-size: 0.92rem;
+            font-weight: 600;
+            width: fit-content;
+        }
+        .badge::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+        }
+        h1 {
+            font-size: clamp(3rem, 5vw, 5rem);
+            line-height: 0.95;
+            letter-spacing: -0.06em;
+        }
+        strong {
+            color: var(--accent);
+        }
+        p {
+            max-width: 680px;
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: #c8d2e1;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        .button.primary {
+            background: var(--accent);
+            color: #0d1117;
+        }
+        .button.secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: 32px;
+            color: #8c97ab;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
-    <p id="hello-world-paragraph"></p>
-    <script>
-        const paragraph = document.getElementById("hello-world-paragraph");
-        const phrase = "hello world ";
-        paragraph.textContent = phrase.repeat(1000000).trim();
-    </script>
+    <main class="container">
+        <section class="hero">
+            <span class="badge">AI • Hello World</span>
+            <div>
+                <h1>AI Front Page<br><strong>Hello World</strong></h1>
+                <p>Welcome to a modern AI landing page. Discover intelligent design, clean layout, and thoughtful details built for the next generation of creative tools.</p>
+            </div>
+            <div class="buttons">
+                <a href="#features" class="button primary">Explore Features</a>
+                <a href="#learn" class="button secondary">Learn More</a>
+            </div>
+        </section>
+        <footer>
+            Designed as a simple and modern AI front page experience.
+        </footer>
+    </main>
 </body>
 </html>
