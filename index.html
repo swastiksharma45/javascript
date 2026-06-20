@@ -7,6 +7,11 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <p>this thing sucks and fuck that hackerrrrrrrrr hotmail.bitch</p>
+    <p id="hello-world-paragraph"></p>
+    <script>
+        const paragraph = document.getElementById("hello-world-paragraph");
+        const phrase = "hello world ";
+        paragraph.textContent = phrase.repeat(1000000).trim();
+    </script>
 </body>
 </html>
