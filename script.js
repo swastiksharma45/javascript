@@ -1,6 +1,7 @@
 let arr=[1,2,3,4];
-let newArr=arr.filter((val)=>
+let output=arr.reduce((preval,currentval)=>
 {
-    return val%2===0;
-});
-console.log(newArr);
+    return preval+currentval;
+    
+})
+console.log(output);
