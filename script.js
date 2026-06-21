@@ -1,7 +1,7 @@
 let arr=[1,2,3,4];
-let output=arr.reduce((preval,currentval)=>
+let output=arr.reduce((prev,curr)=>
 {
-    return preval+currentval;
+    return prev>curr?prev:curr;
     
-})
+});
 console.log(output);
