@@ -1,5 +1,6 @@
 let arr=[1,2,3,4];
-arr.map((val)=>
+let newArr=arr.map((val)=>
 {
-console.log(val);
-})
+    return val;
+});
+console.log(newArr);
