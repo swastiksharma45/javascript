@@ -1,4 +1,4 @@
-let arr=[1,2,3,4,5];
-arr.forEach((val) =>{
-    console.log(val);
+let arr=["delhi","indore","mumbai"];
+arr.forEach((val,idx,arr)=>{
+    console.log(val.toUpperCase(),idx,arr);
 });
