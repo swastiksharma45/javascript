@@ -1,6 +1,6 @@
 let arr=[1,2,3,4];
-let newArr=arr.map((val)=>
+let newArr=arr.filter((val)=>
 {
-    return val;
+    return val%2===0;
 });
 console.log(newArr);
