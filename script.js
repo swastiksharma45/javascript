@@ -1,23 +1,4 @@
-const myVowels=(str)=>{
-    let count=0;
-    for(const char of str)
-    {
-        if(
-            char ==='a'||
-            char ==='e'||
-        char ==='i'||
-char ==='o'||
-char ==='u'||
-char ==='A'||
-char ==='E'||
-char ==='I'||
-char ==='O'||
-char ==='U'
-        )
-        {
-            count++;
-        }
-        }
-        console.log(count);
-}
-myVowels("HelloAA");
+let arr=[1,2,3,4,5];
+arr.forEach(function printVal(val){
+console.log(val);
+});
