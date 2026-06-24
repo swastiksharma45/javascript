@@ -1,4 +1,4 @@
 let box=document.querySelector("#box");
-box.onmouseover=()=>{
-console.log("you are inside box");
+box.onmouseover=(e)=>{
+console.log(e);
 };
